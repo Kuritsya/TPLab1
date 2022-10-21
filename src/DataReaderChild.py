@@ -1,5 +1,3 @@
-from Types import DataType
-from DataReader import DataReader
 import yaml
 
 from DataReader import DataReader
@@ -22,3 +20,6 @@ class DataReaderChild(DataReader):
                     self.students[number].append((item, score))
 
         return self.students
+
+    print("Текст для нового коммита")
+

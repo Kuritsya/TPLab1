@@ -12,8 +12,8 @@ class TestMyCalculations:
         data: DataType = {
             "Петров Петр Петрович":
                 [
-                    ("химия", 77),
-                    ("литература", 88),
+                    ("химия", 89),
+                    ("литература", 79),
                     ("физика", 99)
                 ],
 
@@ -27,7 +27,7 @@ class TestMyCalculations:
         }
 
         rightStudent: str = "Валерьев Валерий Валерьевич"
-        scores: list = [77, 88, 99]
+        scores: list = [89, 79, 99]
         rightScores: bool = False
 
         return data, rightStudent, scores, rightScores
