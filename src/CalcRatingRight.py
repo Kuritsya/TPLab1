@@ -1,6 +1,6 @@
 from Types import DataType
 
-
+# Определение окончания поиска нужного студента
 def RightScores(scores) -> bool:
     isRightScores = True
     for itemScores in scores:
@@ -8,7 +8,7 @@ def RightScores(scores) -> bool:
             isRightScores = False
     return isRightScores
 
-
+# Вычисление результатов ученика
 def GetStudentScores(student) -> list:
     items = student[1]
     scores = []
@@ -16,7 +16,7 @@ def GetStudentScores(student) -> list:
         scores.append(item[1])
     return scores
 
-
+# Поиск правильного студента
 class CalcRatingRight:
 
     def __init__(self, data: DataType) -> None:
@@ -29,3 +29,4 @@ class CalcRatingRight:
             if RightScores(scores):
                 rightStudent = student[0]
         return rightStudent
+
