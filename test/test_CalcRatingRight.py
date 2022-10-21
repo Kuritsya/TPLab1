@@ -68,4 +68,3 @@ class TestMyCalculations:
         scores = GetStudentScores(student)
         rightScores = RightScores(scores)
         assert input_data[3] == rightScores
-        
