@@ -13,7 +13,8 @@ class DataReaderChild(DataReader):
         with open(path, encoding='utf-8') as file:
             students = yaml.load(file, Loader=yaml.Loader)
             for student in students:
-                number, items = list(student.items())[0]  # Номер студента, предмет
+                # Номер студента, предмет
+                number, items = list(student.items())[0]
                 self.students[number] = []
                 for item in items.keys():
                     score = items.get(item)  # Поиск результата по предмету
@@ -22,4 +23,3 @@ class DataReaderChild(DataReader):
         return self.students
 
     print("Текст для нового коммита")
-
