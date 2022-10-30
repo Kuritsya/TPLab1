@@ -1,7 +1,7 @@
 import pytest
-
-from DataReaderChild import DataReaderChild
-from Types import DataType
+import yaml
+from src.DataReaderChild import DataReaderChild
+from src.Types import DataType
 
 
 class TestDataReaderChild:

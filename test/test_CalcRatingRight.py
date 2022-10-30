@@ -1,7 +1,8 @@
 import pytest
+import yaml
 
-from CalcRatingRight import CalcRatingRight, GetStudentScores, RightScores
-from Types import DataType
+from src.CalcRatingRight import CalcRatingRight, GetStudentScores, RightScores
+from src.Types import DataType
 
 
 class TestMyCalculations:
